@@ -2,13 +2,13 @@
 
 ## How to clone this repo, rename it, and use it for whatever you'd like
 
-- Copy the clone url (`git@github.com:mikevallano/templatetest.git`)
+- Copy the clone url (`git@github.com:mikevallano/react-rails-tester.git`)
 - Clone to the folder where you want to store it (If you already have a project with the same name,
 clone into a different folder, follow steps to rename the app, then move it where you'd like).
-- `git clone git@github.com:mikevallano/templatetest.git`
-- Rename the project (`mv templatetest the-new-name-you-want`)
+- `git clone git@github.com:mikevallano/react-rails-tester.git`
+- Rename the project (`mv react-rails-tester the-new-name-you-want`)
 - Move the project to where you want it (`mv new-name learning-practice/`)
-- Rename the necessary files in the application. (just search the app for  `templatetest` without case sensitivity).
+- Rename the necessary files in the application. (just search the app for  `react-rails-tester` without case sensitivity).
 Should be the following files:
   - `config/cable.yml`
   - `config/database.yml` (search for all-caps version of the app name)
