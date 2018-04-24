@@ -1,0 +1,32 @@
+<%= form_with(model: critter, local: true) do |form| %>
+  <% if critter.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(critter.errors.count, "error") %> prohibited this critter from being saved:</h2>
+
+      <ul>
+      <% critter.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :critter_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.number_field :age, id: :critter_age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :crit_type %>
+    <%= form.number_field :crit_type, id: :critter_crit_type %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @critter.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @critter.age %>
+</p>
+
+<p>
+  <strong>Crit type:</strong>
+  <%= @critter.crit_type %>
+</p>
+
+<%= link_to 'Edit', edit_critter_path(@critter) %> |
+<%= link_to 'Back', critters_path %>

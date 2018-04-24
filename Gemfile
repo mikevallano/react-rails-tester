@@ -55,6 +55,7 @@ end
 
 group :development, :test do
   gem 'pry'
+  gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
   gem 'ffaker'
   gem 'awesome_print'
   gem 'rspec-rails', '~> 3.6'
