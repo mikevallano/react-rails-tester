@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Critters from "./Critters"
+import Critter from "./Critter"
 import Tester from "./Tester"
 
 class App extends React.Component {
@@ -23,6 +24,9 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <Critters addCritters={this.addCritters}/>
+        <ul className="all-critters">
+          {Object.keys(this.state.critters).map(key => <Critter key={key} index={key} details={this.state.critters[key]}/>)}
+        </ul>
         <Tester/>
       </React.Fragment>
     );
