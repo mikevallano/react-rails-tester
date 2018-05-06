@@ -1,2 +1,2 @@
 json.extract! critter, :id, :name, :age, :crit_type
-json.url critter_url(critter, format: :json)
+json.path critter_path(critter, format: :json)

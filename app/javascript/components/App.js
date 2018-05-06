@@ -25,7 +25,10 @@ class App extends React.Component {
       <React.Fragment>
         <Critters addCritters={this.addCritters}/>
         <ul className="all-critters">
-          {Object.keys(this.state.critters).map(key => <Critter key={key} index={key} details={this.state.critters[key]}/>)}
+          {Object.keys(this.state.critters)
+            .map(key => <Critter
+                          key={key} index={key} details={this.state.critters[key]}/>
+                 )}
         </ul>
         <Tester/>
       </React.Fragment>

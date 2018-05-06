@@ -5,7 +5,11 @@ class Critters extends React.Component {
   render () {
     return (
       <div className='critters'>
-        <button onClick={this.props.addCritters} className='btn btn-success btn-sm'>Add Critters to State</button>
+        <button onClick={this.props.addCritters}
+                className='btn btn-sm btn-outline-success'
+                id='add-critters-btn'>
+                Add Critters to State
+        </button>
       </div>
     );
   }

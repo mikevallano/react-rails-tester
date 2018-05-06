@@ -1,3 +1,13 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#add-critters-btn {
+  margin-bottom: 10px;
+}
+
+li.critter {
+  font-size: 1.2em;
+  padding: 5px;
+}
+
+.edit-critter-btn {
+  line-height: 0.8;
+  margin-left: 15px;
+}
